@@ -1,0 +1,21 @@
+# Ignore Firebase service account key
+config/firebase-credentials.json
+
+# Environment variables
+.env
+
+# Python compilation artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases & Media
+db.sqlite3
+media/
+staticfiles/
+
+# virtual environments
+venv/
+.venv/
+env/
+ENV/
