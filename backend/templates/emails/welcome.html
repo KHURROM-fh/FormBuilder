@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Bidding Motors!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffd600;
+      /* Yellow background */
+      margin: 0;
+      padding: 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #0077d9;
+      color: white;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .content {
+      padding: 30px 20px;
+      text-align: center;
+      color: #222;
+    }
+
+    .welcome-icon {
+      font-size: 64px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Bidding Motors</h1>
+    </div>
+    <div class="content">
+      <div class="welcome-icon">🎉</div>
+      <h2>Welcome, {{ name }}!</h2>
+      <p>
+        Thanks for joining Bidding Motors. Your account has been created and you're
+        ready to get started.
+      </p>
+
+      <p>
+        Bidding Motors helps you have natural voice conversations with AI
+        personalities. Explore the app to try different modes and voices.
+      </p>
+
+      <p>If you have any questions, please contact our support team.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2026 Bidding Motors. All rights reserved.</p>
+      <p>This message was sent to: {{ email }}</p>
+    </div>
+  </div>
+</body>
+
+</html>

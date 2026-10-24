@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verification Code - Bidding Motors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffd600;
+      /* Yellow background */
+      margin: 0;
+      padding: 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #0077d9;
+      color: white;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .content {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .otp-code {
+      font-size: 32px;
+      font-weight: bold;
+      color: #4caf50;
+      background-color: #f0f0f0;
+      padding: 15px 30px;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 20px 0;
+      letter-spacing: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 12px;
+    }
+
+    .warning {
+      color: #ff6b6b;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Bidding Motors</h1>
+    </div>
+    <div class="content">
+      <h2>Welcome, {{ name }}!</h2>
+      <p>
+        Thanks for signing up for Bidding Motors. To complete your registration,
+        please use the verification code below:
+      </p>
+      <div class="otp-code">{{ otp }}</div>
+
+      <p>This code is valid for <strong>15 minutes</strong>.</p>
+
+      <p class="warning">
+        If you did not sign up for Bidding Motors, please ignore this email.
+      </p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2026 Bidding Motors. All rights reserved.</p>
+      <p>This message was sent to: {{ email }}</p>
+    </div>
+  </div>
+</body>
+
+</html>
