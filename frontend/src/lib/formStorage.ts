@@ -55,7 +55,7 @@ export interface DashboardStats {
   recent_submissions: FormSubmission[];
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://16.171.253.148:8000';
 
 function getAuthHeaders(): Record<string, string> {
   const headers: Record<string, string> = {
