@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External Website Embed Demonstration - FormBuilder</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      color: #0f172a;
+    }
+    p {
+      color: #475569;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Acme Sample Website (External Host)</div>
+    <a href="/dashboard" style="color: #2563eb; text-decoration: none; font-size: 0.85rem; font-weight: 600;">Return to FormBuilder Dashboard &rarr;</a>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <span class="badge">Live Demonstration</span>
+      <h1>External Embed Test Page</h1>
+      <p>
+        This simulated external website showcases the embeddable FormBuilder chatbot widget. Notice the floating launcher button in the bottom-right corner!
+      </p>
+      <p>
+        Clicking the launcher loads the interactive form in an isolated container and records responses into the browser's persistent storage, updating your FormBuilder dashboard statistics in real time.
+      </p>
+      <p>
+        Embed code in this page:
+        <br>
+        <code>&lt;script src="/widget.js" data-form-id="feedback-survey" defer&gt;&lt;/script&gt;</code>
+      </p>
+    </div>
+  </div>
+
+  <!-- FormBuilder Widget Embed -->
+  <script src="/widget.js" data-form-id="feedback-survey" data-primary-color="#2563eb" defer></script>
+</body>
+</html>
